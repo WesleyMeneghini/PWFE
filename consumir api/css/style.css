@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    padding-top: 10vh;  
+    
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.txt-center{
+    text-align: center;
+}
+
+#conteudo_moedas{
+    width: 800px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+}
+
+#resultado{
+    width: 200px;
+    height: 100px;
+    background-color: darkgray;
+    margin-bottom: 20px;
+}
