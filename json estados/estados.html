@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estados</title>
+    
+    <style>
+        *{
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+            /* background-color: aliceblue; */
+        }
+        .conteudo{
+            width: 800px;
+            height: inherit;
+        }
+
+        #tabela_de_estados{
+            width: 100%;
+            min-height: 900px;
+            height: auto;
+            background-color: rgb(165, 108, 108);
+            padding-top: 50px;
+            
+        }
+
+        #txt_sigla{
+            float: left;
+            margin-left: 30px;
+            margin-top: 20px;
+            height: 30px;
+            width: 250px;
+
+        }
+
+        #btn_pesquisar{
+            float: left;
+            height: 30px;
+            width: 100px;
+            margin-top: 20px;
+        }
+        #resultado, #mostrar_cidades{
+            width: inherit;
+            min-height: 40px;
+            height: auto;
+            background-color: white;
+            font-size: 10px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        #mostrar_cidades{
+            border: solid 1px black;
+        }
+
+        .bkg-black{
+            background-color:  rgb(165, 108, 108);
+            color: black;
+          
+        }
+        .bkg-white{
+            background-color: white;
+            color: black;
+        }
+
+        .clear{
+            clear: both;
+        }
+        td{
+            /* border: solid 1px green; */
+        }
+        .numero{
+            width: 98px;
+            height: 40px;
+            /* background-color: aqua; */
+            text-align: center;
+            float: left;
+            padding-top: 10px;
+            border-right: solid 1px black;
+        }
+        .cidades{
+            width: 700px;
+            height: 40px;
+            float: left;
+            /* background-color: rebeccapurple; */
+            text-align: center;
+            padding-top: 10px;
+        }
+        .linha, #linha{
+            height: 20px;
+        }
+
+        input{
+            border: solid 1px black;
+            margin-bottom: 30px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="tabela_de_estados">
+        <div class="conteudo center">
+            
+            <input placeholder="Digite a sigla de um estado" id="txt_sigla" type="text" maxlength="2">
+            <input type="button" value="PESQUISAR" id="btn_pesquisar" >
+            <div class="clear"></div>
+
+            
+            <div id="resultado" class="center">
+                <div class="numero">
+                    <h1>Nº</h1>
+                </div>
+                <div class="cidades">
+                    <h1>CIDADES</h1>
+                </div>
+                <div id="mostrar_cidades" class="center">
+                    
+                </div>
+                <div class="clear"></div> 
+            </div> 
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        
+    </div>
+    
+    <script src="estados.js"></script>
+</body>
+</html>
